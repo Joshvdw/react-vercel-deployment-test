@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import State from './State'
+
 
 function App() {
+
+const calc = () => {
+  return 2 + 5
+}
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +24,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <State prop={calc}/>
     </div>
   );
 }
